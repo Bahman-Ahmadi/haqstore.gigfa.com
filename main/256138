@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f50057"> 
+   <meta name="msapplication-navbutton-color" content="#f50057">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#f50057"> 
+  <link href="./bootstrap/bootstrap@5.0.0-alpha2.min.css" rel="stylesheet">
+  <link href="./bootstrap/chartist.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/siteHaqs.css">
+  <title>HaqStore</title>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark page-navbar gradient">
+      <div class="container">
+        <a class="navbar-brand logo" href="#"><b>HaqStore</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto" dir="rtl">
+              <li class="nav-item item">
+                
+                <!-- <li class="nav-item item">
+                  <a class="nav-link" href="login.html">ثبت نام / ورود</a>
+                </li> -->
+                
+                <li class="nav-item item">
+                  <a class="nav-link" href="index.html">حق ها</a>
+                </li>
+                <!-- <li class="nav-item item">
+                    <a class="nav-link" href="index.html">حق های سایت</a>
+                </li>
+                <li class="nav-item item">
+                  <a class="nav-link" href="newHaqs.html">جدیدترین حق ها</a>
+                </li> -->
+                
+                <li class="nav-item item">
+                    <a class="nav-link" href="whatIsHaq.html">حق چیست؟</a>
+                </li>
+                
+                <li class="nav-item item">
+                    <a class="nav-link" href="aboutUs.html">درباره ما</a>
+                </li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  
+  <div class="container" style="margin-top: 100px;">
+    
+    <div class="goto" style="display: flex;" dir="rtl">
+        <button class="btn btn-primary" style="border-top-right-radius: 50px; border-bottom-right-radius: 50px; width: 20%;" onclick="goto();">برو به</button>
+        <input type="number" id="req" value="1" placeholder="حق چندم؟" class="form-control" style="width: 80%; border-top-left-radius: 50px; border-bottom-left-radius: 50px;"/>
+    </div><br/>
+    
+    <div class="raw" id="program">
+    </div>
+  </div>
+  
+  <iframe id="frmFile" src="sentHaq.txt" onload="LoadFile(';');" style="display: none;"></iframe>
+    
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="./js/sentHaqs.js"></script>
+</body>
+</html>
